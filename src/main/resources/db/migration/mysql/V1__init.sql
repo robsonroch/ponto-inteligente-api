@@ -14,7 +14,7 @@ DROP TABLE IF EXISTS `funcionario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `funcionario` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `cpf` varchar(255) NOT NULL,
   `data_atualizacao` date NOT NULL,
   `data_criacao` date NOT NULL,
