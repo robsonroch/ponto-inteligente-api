@@ -57,10 +57,20 @@ public class Funcionario implements Serializable {
 	@Column(name = "perfil", nullable = false)
 	private PerfilEnum perfil;
 	
+	@Column(name = "data_criacao", nullable = false)
 	private Date dataCriacao;
+	
+	@Column(name = "data_atualizacao", nullable = false)
 	private Date dataAtualizacao;
+	
+	@Column(name = "senha", nullable = false)
 	private String senha;
+	
+	@ManyToOne(fetch = FetchType.EAGER)
+	//@JoinColumn(name="empresa_id")
 	private Empresa empresa;
+	
+	@OneToMany(mappedBy = "funcionario", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private List<Lancamento> lancamentos;
 	
 	public Funcionario() {		
@@ -145,7 +155,6 @@ public class Funcionario implements Serializable {
 		this.perfil = perfil;
 	}
 
-	@Column(name = "data_criacao", nullable = false)
 	public Date getDataCriacao() {
 		return dataCriacao;
 	}
@@ -154,7 +163,6 @@ public class Funcionario implements Serializable {
 		this.dataCriacao = dataCriacao;
 	}
 
-	@Column(name = "data_atualizacao", nullable = false)
 	public Date getDataAtualizacao() {
 		return dataAtualizacao;
 	}
@@ -163,7 +171,6 @@ public class Funcionario implements Serializable {
 		this.dataAtualizacao = dataAtualizacao;
 	}
 	
-	@Column(name = "senha", nullable = false)
 	public String getSenha() {
 		return senha;
 	}
@@ -172,8 +179,6 @@ public class Funcionario implements Serializable {
 		this.senha = senha;
 	}
 
-	@ManyToOne(fetch = FetchType.EAGER)
-	//@JoinColumn(name="empresa_id")
 	public Empresa getEmpresa() {
 		return empresa;
 	}
@@ -182,7 +187,6 @@ public class Funcionario implements Serializable {
 		this.empresa = empresa;
 	}
 
-	@OneToMany(mappedBy = "funcionario", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	public List<Lancamento> getLancamentos() {
 		return lancamentos;
 	}
