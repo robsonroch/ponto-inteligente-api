@@ -20,9 +20,13 @@ public class LancamentoDto {
 	private String localizacao;
 	private Long funcionarioId;
 
+	public LancamentoDto() {
+	}
+
 	@Override
 	public String toString() {
-		return "LancamentoDto [Id=" + id + ", data=" + data + ", tipo" + tipo + ", descricao=" + descricao 
+		return "LancamentoDto [id=" + id + ", data=" + data + ", tipo=" + tipo + ", descricao=" + descricao
 				+ ", localizacao=" + localizacao + ", funcionarioId=" + funcionarioId + "]";
 	}
+	
 }

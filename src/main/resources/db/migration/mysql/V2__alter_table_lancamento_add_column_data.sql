@@ -1,0 +1,1 @@
+ALTER TABLE `lancamento` ADD `data` DATETIME NOT NULL AFTER `id`;
