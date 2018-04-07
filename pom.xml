@@ -103,6 +103,18 @@
 			<artifactId>jjwt</artifactId>
 			<version>0.7.0</version>
 		</dependency>
+		<!-- Swagger e Swagger UI -->
+		<dependency>
+			<groupId>io.springFox</groupId>
+			<artifactId>springFox-swagger2</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>io.springFox</groupId>
+			<artifactId>springFox-swagger-ui</artifactId>
+			<version>2.6.1</version>
+		</dependency>
 		
 		<!-- add pelo aluno -->		
 		<dependency>
