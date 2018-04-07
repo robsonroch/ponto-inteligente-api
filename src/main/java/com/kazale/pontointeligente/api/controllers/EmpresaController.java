@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.kazale.pontointeligente.api.dtos.EmpresaDto;
 import com.kazale.pontointeligente.api.entities.Empresa;
 import com.kazale.pontointeligente.api.services.EmpresaService;
-import com.kazale.prontointeligente.api.response.Response;
+import com.kazale.pontointeligente.api.response.Response;
 
 @RestController
 @RequestMapping("/api/empresas")

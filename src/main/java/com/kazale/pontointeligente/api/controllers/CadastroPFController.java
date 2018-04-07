@@ -26,7 +26,7 @@ import com.kazale.pontointeligente.api.enums.PerfilEnum;
 import com.kazale.pontointeligente.api.services.EmpresaService;
 import com.kazale.pontointeligente.api.services.FuncionarioService;
 import com.kazale.pontointeligente.api.utils.PasswordUtils;
-import com.kazale.prontointeligente.api.response.Response;
+import com.kazale.pontointeligente.api.response.Response;
 
 @RestController
 @RequestMapping("/api/cadastrar-pf")

@@ -1,4 +1,4 @@
-package com.kazale.prontointeligente.api.response;
+package com.kazale.pontointeligente.api.response;
 
 import java.util.ArrayList;
 import java.util.List;

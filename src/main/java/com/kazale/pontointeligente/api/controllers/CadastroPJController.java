@@ -8,7 +8,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.StreamingHttpOutputMessage.Body;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -24,7 +23,7 @@ import com.kazale.pontointeligente.api.enums.PerfilEnum;
 import com.kazale.pontointeligente.api.services.EmpresaService;
 import com.kazale.pontointeligente.api.services.FuncionarioService;
 import com.kazale.pontointeligente.api.utils.PasswordUtils;
-import com.kazale.prontointeligente.api.response.Response;
+import com.kazale.pontointeligente.api.response.Response;
 
 @RestController
 @RequestMapping("/api/cadastrar-pj")

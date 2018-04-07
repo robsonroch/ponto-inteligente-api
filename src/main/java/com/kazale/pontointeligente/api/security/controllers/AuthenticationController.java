@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.kazale.pontointeligente.api.security.dto.JwtAuthenticationDto;
 import com.kazale.pontointeligente.api.security.dto.TokenDto;
 import com.kazale.pontointeligente.api.security.utils.JwtTokenUtil;
-import com.kazale.prontointeligente.api.response.Response;
+import com.kazale.pontointeligente.api.response.Response;
 
 @RestController
 @RequestMapping("/auth")

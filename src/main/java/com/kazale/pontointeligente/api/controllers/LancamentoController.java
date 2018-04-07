@@ -35,7 +35,7 @@ import com.kazale.pontointeligente.api.entities.Lancamento;
 import com.kazale.pontointeligente.api.enums.TipoEnum;
 import com.kazale.pontointeligente.api.services.FuncionarioService;
 import com.kazale.pontointeligente.api.services.LancamentoService;
-import com.kazale.prontointeligente.api.response.Response;
+import com.kazale.pontointeligente.api.response.Response;
 
 @RestController
 @RequestMapping("/api/lancamentos")
